@@ -3185,7 +3185,12 @@ var GLTFLoader = ( function () {
 
 				if ( nodeDef.scale !== undefined ) {
 
-					node.scale.fromArray( nodeDef.scale );
+					if (nodeDef.name == "root")
+						node.scale.fromArray([1, 1, 1]);
+					else
+						node.scale.fromArray(nodeDef.scale);
+
+					// node.scale.fromArray( nodeDef.scale );
 
 				}
 
