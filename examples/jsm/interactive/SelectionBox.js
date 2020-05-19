@@ -154,6 +154,10 @@ var SelectionBox = ( function () {
 
 	SelectionBox.prototype.searchChildInFrustum = function ( frustum, object ) {
 
+		if (object instanceof THREE.BoxHelper) {
+			return;
+		}
+
 		if ( object.isMesh || object.isLine || object.isPoints ) {
 
 			if ( object.material !== undefined ) {

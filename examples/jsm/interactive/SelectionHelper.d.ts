@@ -10,6 +10,7 @@ export class SelectionHelper {
 	constructor( selectionBox: SelectionBox, renderer: WebGLRenderer, cssClassName: string );
 	element: HTMLElement;
 	isDown: boolean;
+	enabled: boolean;
 	pointBottomRight: Vector2;
 	pointTopLeft: Vector2;
 	renderer: WebGLRenderer;
