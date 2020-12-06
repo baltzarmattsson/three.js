@@ -7,7 +7,7 @@
   "types": "src/Three.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrdoob/three.js"
+    "url": "git+https://github.com/mrdoob/three.js.git"
   },
   "files": [
     "build/three.js",
@@ -104,5 +104,6 @@
       "build/three.module.js"
     ],
     "directories": {}
-  }
+  },
+  "dependencies": {}
 }
